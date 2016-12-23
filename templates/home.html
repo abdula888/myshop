@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Интернет-Магазин</title>
+</head>
+<style type="text/css">
+	h1 {
+		color: blue;
+		transform: rotateX(350deg);
+	}
+</style>
+<body>
+	<h1>Продукты</h1>
+	{% for product in products %}
+		<div>
+			<p>{{ product.title }}</p>
+			<p>{{ product.description }}</p>
+			<p>{{ product.price }}</p>
+		</div>
+	{% endfor %}
+</body>
+</html>
